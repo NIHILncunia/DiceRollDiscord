@@ -1,0 +1,24 @@
+{
+  "name": "dice-roll-discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start . --watch && pm2 logs 0",
+    "stop": "pm2 kill 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NIHILncunia/DiceRollDiscord.git"
+  },
+  "keywords": [],
+  "author": "NIHILncunia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NIHILncunia/DiceRollDiscord/issues"
+  },
+  "homepage": "https://github.com/NIHILncunia/DiceRollDiscord#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
+}
