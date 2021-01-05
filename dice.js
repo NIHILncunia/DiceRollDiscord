@@ -48,7 +48,7 @@ module.exports = (message, type) => {
   let mod;
   let roll;
   let rollBox = [];
-  let totalRoll = [];
+  let totalRolls = [];
   let resultBox = [];
   let allResult = [];
 
@@ -116,7 +116,7 @@ module.exports = (message, type) => {
           resultBox.push(rollResult);
         }
 
-        totalRoll.push(total);
+        totalRolls.push(total);
         rollBox = [];
 
       } else {
@@ -125,12 +125,12 @@ module.exports = (message, type) => {
         const rollResult = `${mod}`;
         resultBox.push(rollResult);
 
-        totalRoll.push(mod);
+        totalRolls.push(mod);
       }
     }
   }
 
-  const totalDice = totalRoll.reduce((pre, crr) => { return Number(pre) + Number(crr); }, 0);
+  const totalDice = totalRolls.reduce((pre, crr) => { return Number(pre) + Number(crr); }, 0);
 
   return `결과: **${totalDice}** (${resultBox.join(',  ')})`;
 }
