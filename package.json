@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NIHILncunia/DiceRollDiscord.git"
+    "url": "git+https://github.com/TheDiceRoll/DiceRollDiscord.git"
   },
   "keywords": [],
   "author": "NIHILncunia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NIHILncunia/DiceRollDiscord/issues"
+    "url": "https://github.com/TheDiceRoll/DiceRollDiscord/issues"
   },
-  "homepage": "https://github.com/NIHILncunia/DiceRollDiscord#readme",
+  "homepage": "https://github.com/TheDiceRoll/DiceRollDiscord#readme",
   "dependencies": {
     "discord.js": "^12.5.1"
   }
