@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start . --watch && pm2 logs 0",
-    "stop": "pm2 kill 0"
+    "kill": "pm2 kill"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/TheDiceRoll/DiceRollDiscord#readme",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-plugin-import": "^2.22.1"
   }
 }

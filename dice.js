@@ -3,21 +3,21 @@ module.exports = (message, type) => {
   const values = message.split(' ');
 
   // 비어있는 원소가 있으면 없애버린다.
-  while (values.includes('+roll')) {
-    if (values.indexOf('+roll') != -1) {
-      values.splice(values.indexOf('+roll'), 1);
+  while (values.includes('-roll')) {
+    if (values.indexOf('-roll') != -1) {
+      values.splice(values.indexOf('-roll'), 1);
     }
   }
 
-  while (values.includes('+rmin')) {
-    if (values.indexOf('+rmin') != -1) {
-      values.splice(values.indexOf('+rmin'), 1);
+  while (values.includes('-rmin')) {
+    if (values.indexOf('-rmin') != -1) {
+      values.splice(values.indexOf('-rmin'), 1);
     }
   }
 
-  while (values.includes('+rmax')) {
-    if (values.indexOf('+rmax') != -1) {
-      values.splice(values.indexOf('+rmax'), 1);
+  while (values.includes('-rmax')) {
+    if (values.indexOf('-rmax') != -1) {
+      values.splice(values.indexOf('-rmax'), 1);
     }
   }
 
@@ -132,5 +132,5 @@ module.exports = (message, type) => {
 
   const totalDice = totalRolls.reduce((pre, crr) => { return Number(pre) + Number(crr); }, 0);
 
-  return `결과: **${totalDice}** (${resultBox.join(',  ')})`;
-}
+  return `결과: ***${totalDice}*** (${resultBox.join(',  ')})`;
+};
