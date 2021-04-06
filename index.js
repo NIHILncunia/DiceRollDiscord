@@ -1,14 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+require('dotenv').config();
 
-const config = require('./config.json');
-const prefix = config.prefix;
+const prefix = process.env.PREFIX;
 
 const dice = require('./dice');
 const operate = require('./operate');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  console.log(process.env.TOKEN);
 });
 
 client.on('message', (msg) => {
@@ -61,4 +62,4 @@ client.on('message', (msg) => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);

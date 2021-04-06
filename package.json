@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/TheDiceRoll/DiceRollDiscord#readme",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.23.0",
